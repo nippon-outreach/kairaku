@@ -29,8 +29,8 @@ a.text-link {
     font-weight: 1000;
     color: white;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     line-height: 90%;
     opacity: 0.2;
 }
@@ -38,4 +38,12 @@ a.text-link {
 .slick-center {
     font-size: 170px;
     opacity: 1;
+}
+
+.footer {
+    position: absolute;
+    bottom: 30px; 
+    text-align: center; 
+    left: 0;
+    right: 0;
 }
