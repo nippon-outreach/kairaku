@@ -25,11 +25,17 @@ a.text-link {
 }
 
 .slider-text {
-    font-size: 150px;
+    font-size: 100px;
     font-weight: 1000;
     color: white;
     text-align: center;
-    padding-left: 170px;
-    padding-right: 170px;
+    padding-left: 10px;
+    padding-right: 10px;
     line-height: 90%;
+    opacity: 0.2;
+}
+
+.slick-center {
+    font-size: 170px;
+    opacity: 1;
 }
