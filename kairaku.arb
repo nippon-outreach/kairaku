@@ -1,0 +1,61 @@
+arb.register(
+	"translation", 
+	{
+	"MSG_HTML_TITLE": "KAIRAKU - Experience",
+	"NAVBRAND": "KAIRAKU - Experience",
+	"ABOUT": "About Us",
+	"COMPANY": "Company",
+	"FOUNDER": "Founder",
+	"COOKING": "Cooking Class",
+	"COOKINGDESC": "Learn local cuisines from top chef",
+	"TRADITIONAL": "Traditional Tour",
+	"TRADITIONALDESC": "Explore heritage and culture",
+	"FOODIE": "Foodie Tour",
+	"FOODIEDESC": "The best local dishes you can get",
+	"CITY": "City Tour",
+	"CITYDESC": "Vibrant and bustle of jungle concrete",
+	"CORPORATE": "Corporate Tour",
+	"CORPORATEDESC": "For executives and business people",
+
+	"MSG_CURR_LOCALE": "...und die ausgewählte Sprache ist \"{currentLocale}\".",
+	  "@MSG_CURR_LOCALE": {
+	    "placeholders": {
+	      "0": {
+	        "description": "This variable would show the current locale.",
+	        "example": "fr"
+	      }
+	    }
+	  }
+	}
+);
+
+arb.register(
+	"translation:jp", 
+	{
+	"MSG_HTML_TITLE": "快楽 - 体験",
+	"NAVBRAND": "快楽 - 体験",
+	"ABOUT": "情報",
+	"COMPANY": "会社情報",
+	"FOUNDER": "創始者",
+	"COOKING": "料理づくり",
+	"COOKINGDESC": "地元の料理をトップシェフから学ぶ",
+	"TRADITIONAL": "伝統的なツアー",
+	"TRADITIONALDESC": "遺産と文化を探る",
+	"FOODIE": "食通ツアー",
+	"FOODIEDESC": "最高の地元料理",
+	"CITY": "街のツアー",
+	"CITYDESC": "にぎやかな街に",
+	"CORPORATE": "会社ツアー",
+	"CORPORATEDESC": "企業の方へ",
+
+	"MSG_CURR_LOCALE": "...und die ausgewählte Sprache ist \"{currentLocale}\".",
+	  "@MSG_CURR_LOCALE": {
+	    "placeholders": {
+	      "0": {
+	        "description": "This variable would show the current locale.",
+	        "example": "fr"
+	      }
+	    }
+	  }
+	}
+);

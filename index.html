@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
+<head arb:namespace="japanese">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Kairaku - Experience</title>
+  <title arb:id="MSG_HTML_TITLE">KAIRAKU - Experience</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,10 @@
   <link href="css/carousel.css" rel="stylesheet">
   <link href="vendor/animate/animate.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
-  <!-- <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/> -->
+  
+  <!-- i18n translation -->
+  <script src="arb/lib/arbcore.js"></script>
+	<script src="kairaku.arb"></script>
 
 </head>
 
@@ -34,7 +37,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">
+      <a class="navbar-brand js-scroll-trigger" href="index.html" arb:id="NAVBRAND">
         KAIRAKU
         <span style="font-size: 10px;">Experience</span>
       </a>
@@ -44,17 +47,20 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a arb:id="ABOUT" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               About Us
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="pages/company.html">Company</a>
-              <a class="dropdown-item" href="pages/founder.html">Founder</a>
+              <a class="dropdown-item" href="pages/company.html" arb:id="COMPANY">Company</a>
+              <a class="dropdown-item" href="pages/founder.html" arb:id="FOUNDER">Founder</a>
             </div>
           </li>
           <span style="padding-left: 30px;"></span>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#lang">EN/JP</a>
+            <a href="?locale=jp" role="button" class="nav-link" id="translateBtn">JP</a>
+          </li>
+          <li class="nav-item">
+            <a href="?locale=en" role="button" class="nav-link" id="translateBtn">EN</a>
           </li>
         </ul>
       </div>
@@ -74,28 +80,28 @@
       <div class="carousel-text">
         <div class="text-item">
           <img class="text-icon animated swing infinite slower" src="img/pan.png" />
-          <h6>Learn local cuisines with top chef</h6>
-          <a href="pages/cooking.html" class="text-link">Cooking<br/>Class</a>
+          <h6 arb:id="COOKINGDESC">Learn local cuisines with top chef</h6>
+          <a href="pages/cooking.html" class="text-link" arb:id="COOKING">Cooking<br/>Class</a>
         </div>
         <div class="text-item">
           <img class="text-icon animated slideInUp infinite slower" src="img/traditional.png" />
-          <h6>Explore heritage and culture</h6>
-          <a href="pages/traditional.html" class="text-link">Traditional<br/>Tour</a>
+          <h6 arb:id="TRADITIONALDESC">Explore heritage and culture</h6>
+          <a href="pages/traditional.html" class="text-link" arb:id="TRADITIONAL">Traditional<br/>Tour</a>
         </div>
         <div class="text-item">
           <img class="text-icon animated tada infinite slower" src="img/foodie.png" />
-          <h6>The best local dishes you can get</h6>
-          <a href="pages/foodie.html" class="text-link">Foodie<br/>Tour</a>
+          <h6 arb:id="FOODIEDESC">The best local dishes you can get</h6>
+          <a href="pages/foodie.html" class="text-link" arb:id="FOODIE">Foodie<br/>Tour</a>
         </div>
         <div class="text-item">
           <img class="text-icon animated pulse infinite slower" src="img/tower.png" />
-          <h6>Vibrant and hustle of jungle concrete</h6>
-          <a href="pages/city.html" class="text-link">City<br/>Tour</a>
+          <h6 arb:id="CITYDESC">Hustle and bustle of jungle concrete</h6>
+          <a href="pages/city.html" class="text-link" arb:id="CITY">City<br/>Tour</a>
         </div>
         <div class="text-item">
           <img class="text-icon animated fadeIn infinite slower" src="img/briefcase.png" />
-          <h6>For executives</h6>
-          <a href="pages/corporate.html" class="text-link">Corporate<br/>Tour</a>
+          <h6 arb:id="CORPORATEDESC">For executives and business people</h6>
+          <a href="pages/corporate.html" class="text-link" arb:id="CORPORATE">Corporate<br/>Tour</a>
         </div>
       </div>
     </div>
@@ -112,6 +118,7 @@
   <!-- Custom scripts for this template -->
   <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
   <script type="text/javascript" src="js/carousel.js"></script>
+  <script type="text/javascript" src="js/translator.js"></script>
 
 </body>
 
