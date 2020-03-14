@@ -21,25 +21,24 @@
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/new-age.css" rel="stylesheet">
+  <link href="css/kairaku.css" rel="stylesheet">
   <link href="css/carousel.css" rel="stylesheet">
-
+  <link href="css/animate.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/> -->
 
 </head>
 
 <body id="page-top">
   
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="index.html">
         KAIRAKU
         <span style="font-size: 10px;">Experience</span>
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -65,41 +64,40 @@
   <header class="masthead">
     <div class="carousel-container">
       <div class="carousel-img">
-        <img class="slider-img" src="img/cooking.jpg" />
-        <img class="slider-img" src="img/traditional.jpg" />
-        <img class="slider-img" src="img/foodie.jpg" />
-        <img class="slider-img" src="img/city.jpg" />
-        <img class="slider-img" src="img/corporate.jpg" />
+        <img class="img-item" src="img/cooking.jpg" />
+        <img class="img-item" src="img/traditional.jpg" />
+        <img class="img-item" src="img/foodie.jpg" />
+        <img class="img-item" src="img/city.jpg" />
+        <img class="img-item" src="img/corporate.jpg" />
       </div>
 
       <div class="carousel-text">
-        <div class="slider-text active-focus">
-          <h5>Learn local cuisines with top chef</h5>
+        <div class="text-item">
+          <img class="text-icon" src="img/pan.png" />
+          <h6>Learn local cuisines with top chef</h6>
           <a href="cooking.html" class="text-link">Cooking<br/>Class</a>
         </div>
-        <div class="slider-text">
-          <h5>Explore heritage and culture</h5>
+        <div class="text-item">
+          <img class="text-icon" src="img/traditional.png" />
+          <h6>Explore heritage and culture</h6>
           <a href="traditional.html" class="text-link">Traditional<br/>Tour</a>
         </div>
-        <div class="slider-text">
-          <h5>The best local dishes you can get</h5>
+        <div class="text-item">
+          <img class="text-icon" src="img/foodie.png" />
+          <h6>The best local dishes you can get</h6>
           <a href="foodie.html" class="text-link">Foodie<br/>Tour</a>
         </div>
-        <div class="slider-text">
-          <h5>Vibrant and hustle of jungle concrete</h5>
+        <div class="text-item">
+          <img class="text-icon" src="img/tower.png" />
+          <h6>Vibrant and hustle of jungle concrete</h6>
           <a href="city.html" class="text-link">City<br/>Tour</a>
         </div>
-        <div class="slider-text">
-          <h5>For executives who know how to have fun</h5>
+        <div class="text-item">
+          <img class="text-icon" src="img/briefcase.png" />
+          <h6>For executives</h6>
           <a href="corporate.html" class="text-link">Corporate<br/>Tour</a>
         </div>
       </div>
-    </div>
-    
-    <div class="footer">
-      <i class="fas fa-arrow-left"></i>
-      <i class="fas fa-arrow-right"></i>
-      <h5 style="color: whitesmoke;">Swipe left or right</h5>
     </div>
 
   </header>
@@ -114,31 +112,7 @@
   <!-- Custom scripts for this template -->
   <script src="js/new-age.js"></script>
   <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-
-      $('.carousel-img').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.carousel-text'
-      });
-
-      $('.carousel-text').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.carousel-img',
-        centerMode: true,
-        focusOnSelect: true,
-        variableWidth: true,
-        cssEase: 'linear',
-        infinite: false,
-      });
-
-    });
-  </script>
+  <script type="text/javascript" src="js/kairaku.js"></script>
 
 </body>
 
