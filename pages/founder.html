@@ -23,6 +23,10 @@
   <!-- Custom styles for this template -->
   <link href="../css/kairaku.css" rel="stylesheet">
 
+  <!-- i18n translation -->
+  <script src="../arb/lib/arbcore.js"></script>
+	<script src="../kairaku.arb"></script>
+
 </head>
 
 <body id="page-top">
@@ -50,7 +54,7 @@
           </li>
           <span style="padding-left: 30px;"></span>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#lang">EN/JP</a>
+            <a href="" onClick="toggleLocale()" role="button" class="nav-link" id="translateBtn">EN / JP</a>
           </li>
         </ul>
       </div>
@@ -92,7 +96,7 @@
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  
+  <script type="text/javascript" src="../js/translator.js"></script>
 
 </body>
 

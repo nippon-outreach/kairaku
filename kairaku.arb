@@ -16,16 +16,6 @@ arb.register(
 	"CITYDESC": "Vibrant and bustle of jungle concrete",
 	"CORPORATE": "Corporate Tour",
 	"CORPORATEDESC": "For executives and business people",
-
-	"MSG_CURR_LOCALE": "...und die ausgewählte Sprache ist \"{currentLocale}\".",
-	  "@MSG_CURR_LOCALE": {
-	    "placeholders": {
-	      "0": {
-	        "description": "This variable would show the current locale.",
-	        "example": "fr"
-	      }
-	    }
-	  }
 	}
 );
 
@@ -47,15 +37,5 @@ arb.register(
 	"CITYDESC": "にぎやかな街に",
 	"CORPORATE": "会社ツアー",
 	"CORPORATEDESC": "企業の方へ",
-
-	"MSG_CURR_LOCALE": "...und die ausgewählte Sprache ist \"{currentLocale}\".",
-	  "@MSG_CURR_LOCALE": {
-	    "placeholders": {
-	      "0": {
-	        "description": "This variable would show the current locale.",
-	        "example": "fr"
-	      }
-	    }
-	  }
 	}
 );
