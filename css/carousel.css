@@ -1,4 +1,8 @@
 /* carousel styling */
+a.text-link {
+    text-decoration: none;
+    outline: none;
+}
 .carousel-img {
     position: absolute;
     width: auto;
@@ -9,7 +13,6 @@
     max-width: 100%;
     filter: brightness(40%);
 }
-
 .carousel-text {
     position: absolute;
 }
@@ -23,18 +26,12 @@
     line-height: 90%;
     opacity: 0.2;
     padding-top: 120px;
-    padding-bottom: 30px;
-}
-a.text-link {
-    text-decoration: none;
-    outline: none;
 }
 .text-icon {
     width: 90px; 
     height: auto;
     position: absolute;
     transform: rotate(10deg);
-    bottom: 0;
     z-index: -1;
 }
 
@@ -42,15 +39,41 @@ a.text-link {
 .slick-center {
     transform: scale(2);
     transition: transform 2s;
-    /* font-size: 70px; */
     opacity: 1;
 }
 .slick-slide {
     outline: none;
 }
-header.masthead .carousel-container .carousel-text.slick-slider {
-    height: 500px;
-}
+header.masthead .carousel-container .carousel-text.slick-slider,
 header.masthead .carousel-container .carousel-text.slick-slider .slick-list {
-    height: 500px;
+    height: 400px;
+}
+
+/* mobile */
+@media (max-width: 992px){
+    .text-item {
+        font-size: 10px;
+        font-weight: 1000;
+        color: white;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 90%;
+        opacity: 0.2;
+        padding-top: 20px;
+    }
+    .text-icon {
+        width: 40px; 
+        height: auto;
+        position: absolute;
+        transform: rotate(10deg);
+        bottom: 0;
+        z-index: -1;
+    }
+    h6 {
+        font-size: 5px;
+    }
+    .slick-center {
+        opacity: 1;
+    }
 }
